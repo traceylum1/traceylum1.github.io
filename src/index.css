@@ -1,3 +1,9 @@
+html {
+  width: screen;
+  height: screen;
+  background-color:rgb(255, 252, 247);
+}
+
 body {
   margin: auto;
   padding: 8px;

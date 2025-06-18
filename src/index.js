@@ -7,6 +7,8 @@ import Projects from './app/routes/Projects/Projects';
 import Learning from './app/routes/Learning/Learning';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import reportWebVitals from './reportWebVitals';
+import SelfReflections from './app/routes/Learning/Topics/SelfReflections';
+import TechnicalStuff from './app/routes/Learning/Topics/TechnicalStuff';
 
 const root = document.getElementById("root");
 
@@ -17,7 +19,11 @@ ReactDOM.createRoot(root).render(
         <Route path="/" element={<App />} />
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
-        <Route path="learning" element={<Learning />} />
+        <Route path="learning">
+          <Route index element={<Learning />} />
+          <Route path="self-reflections" element={<SelfReflections />} />
+          <Route path="technical" element={<TechnicalStuff />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>

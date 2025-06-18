@@ -6,11 +6,9 @@ function Projects() {
     <>
       <Header/>
       <div className="Projects">
-        <article>
           <p>
             <a href='https://dev.discoball.fm/'>discoball.fm</a> - <i>"never listen to an old song."</i>
           </p>
-        </article>
       </div>
     </>
 
