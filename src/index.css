@@ -14,7 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color:rgb(255, 252, 247);
   max-width: 700px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 h1 {
@@ -40,7 +40,7 @@ section {
 }
 
 p {
-  line-height: 23px;
+  line-height: 150%;
 }
 
 i {

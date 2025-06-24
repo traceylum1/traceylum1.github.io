@@ -9,7 +9,7 @@ function About() {
       <div className="About">
         <article>
           <p>
-            Born and raised in the East Bay. An aspiring software engineer. Learning to learn deeply and appreciate the finer details.
+            Software engineer. Born and raised in the East Bay. Learning to learn deeply and appreciate the finer details. Maybe do some good in the world along the way.
           </p>
         </article>
         <article>

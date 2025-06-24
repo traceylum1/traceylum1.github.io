@@ -1,10 +1,14 @@
 import Header from '../../../components/Header';
+import { useNavigate } from 'react-router';
 
 function SelfReflections() {
+    const navigate = useNavigate();
+
   return (
     <>
         <Header/>
         <div className="self-reflections">
+        <button className="back-button" onClick={() => navigate(-1)}>back</button>
             <article>
                 <h2>4-17-2025</h2>
                 <section>
