@@ -2,13 +2,21 @@ import './Projects.css';
 import Header from '../../components/Header';
 
 function Projects() {
+
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  }
+
+  const onClickUrl = (url) => {
+    return () => openInNewTab(url)
+  }
+
   return (
     <>
       <Header/>
       <div className="Projects">
-          <p>
-            <a href='https://dev.discoball.fm/'>discoball.fm</a> - <i>"never listen to an old song."</i>
-          </p>
+          <span className='link' onClick={onClickUrl('https://discoball.fm/')}>discoball.fm</span><i> - "never listen to an old song."</i>
       </div>
     </>
 

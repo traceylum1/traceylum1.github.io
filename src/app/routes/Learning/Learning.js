@@ -7,8 +7,8 @@ function Learning() {
     <>
       <Header/>
       <div className="Learning">
-      <p><Link to="self-reflections">Self-Reflections</Link> - Some introspective thoughts on my learning journey</p>
-      <p><Link to="technical">Technical Stuff</Link> - Diving into CS topics</p>
+        <p><Link to="technical">Technical Stuff</Link> - Exploring CS topics</p>
+        <p><Link to="self-reflections">Self-Reflections</Link> - Some thoughts on my learning journey</p>
       </div>
     </>
   );
