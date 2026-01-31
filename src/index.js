@@ -1,7 +1,7 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './app/App';
+import Home from './app/routes/Home/Home';
 import About from './app/routes/About/About';
 import Projects from './app/routes/Projects/Projects';
 import Learning from './app/routes/Learning/Learning';
@@ -16,7 +16,7 @@ ReactDOM.createRoot(root).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
         <Route path="learning">

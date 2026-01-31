@@ -1,5 +1,5 @@
 import './About.css';
-import Header from '../../components/Header';
+import Header from '../../Components/Header';
 
 
 function About() {

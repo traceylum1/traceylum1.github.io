@@ -1,11 +1,12 @@
-import './App.css';
-import Header from './components/Header';
+import './Home.css';
+import Header from '../../Components/Header';
+import sunset from '../../Images/sunset.jpg';
 
-function App() {
+function Home() {
   return (
     <>
       <Header/>
-        <div className="App">
+        <div className="Home">
           <article>
             <h3>
               Hello, welcome to my website!
@@ -14,13 +15,14 @@ function App() {
               This is where I document my CS learning journey and other interests/activities.
             </p>
             <p>
-              Thank you for visiting :)
+              Thanks for visiting - here is a pic of a sunset by the water :)
             </p>
           </article>
+          <img src={sunset} alt="a chill sunset" width="500"></img>
         </div>
     </>
 
   );
 }
 
-export default App;
+export default Home;

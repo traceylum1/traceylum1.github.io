@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import './Learning.css';
-import Header from '../../components/Header';
+import Header from '../../Components/Header';
 
 function Learning() {
   return (

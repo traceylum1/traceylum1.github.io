@@ -1,7 +1,7 @@
-import Header from '../../../components/Header';
+import Header from '../../../Components/Header';
 import { useNavigate } from 'react-router';
 import { useState, useEffect } from 'react';
-import MarkdownPost from '../../../components/MarkdownPost';
+import MarkdownPost from '../../../Components/MarkdownPost';
 
 function TechnicalStuff() {
   const [posts, setPosts] = useState([]);
