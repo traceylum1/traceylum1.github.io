@@ -1,0 +1,14 @@
+[
+    {
+        "slug": "tcp-ip",
+        "title": "TCP/IP",
+        "date": "2024-01-01",
+        "src": "/Technical/tcp-ip.md"
+    },
+    {
+        "slug": "simple-http-java",
+        "title": "Simple HTTP Server in Java",
+        "date": "2024-01-01",
+        "src": "/Technical/simple-http-java.md"
+    }
+]

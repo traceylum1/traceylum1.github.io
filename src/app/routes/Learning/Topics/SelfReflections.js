@@ -1,16 +1,29 @@
 import Header from '../../../components/Header';
 import { useNavigate } from 'react-router';
+import { useState, useEffect } from 'react';
+import MarkdownPost from '../../../components/MarkdownPost';
 
 function SelfReflections() {
-    const navigate = useNavigate();
+  const [posts, setPosts] = useState([]);
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    fetch("/Reflections/manifest.json")
+      .then(res => res.json())
+      .then(setPosts);
+  }, []);
 
   return (
     <>
-        <Header/>
-        <div className="self-reflections">
-            <button className="back-button" onClick={() => navigate(-1)}>back</button>
-            <article><section><p className='indented-text'>Will add something here eventually...</p></section></article>
-        </div>
+      <Header/>
+      <div className="self-reflections">
+        <button className="back-button" onClick={() => navigate(-1)}>back</button>
+        {posts.map(post => (
+          <article key={post.date}>
+            <MarkdownPost src={post.src} />
+          </article>
+        ))}
+      </div>
     </>
   );
 }

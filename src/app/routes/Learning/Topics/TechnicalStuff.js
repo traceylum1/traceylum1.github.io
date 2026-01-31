@@ -1,38 +1,29 @@
 import Header from '../../../components/Header';
 import { useNavigate } from 'react-router';
 import { useState, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
+import MarkdownPost from '../../../components/MarkdownPost';
 
 function TechnicalStuff() {
+  const [posts, setPosts] = useState([]);
   const navigate = useNavigate();
 
-  const [tcpIp, setTcpIp] = useState("");
-  const [simple, setSimple] = useState("");
-
   useEffect(() => {
-    fetch("/Technical/tcp-ip.md")
-      .then(res => res.text())
-      .then(setTcpIp);
-
-    fetch("/Technical/simple-http-java.md")
-      .then(res => res.text())
-      .then(setSimple);
-
+    fetch("/Technical/manifest.json")
+      .then(res => res.json())
+      .then(setPosts);
   }, []);
   
   return (
     <>
-        <Header/>
-        <div className="technical-stuff">
-          <button className="back-button" onClick={() => navigate(-1)}>back</button>
-          <article>
-            <ReactMarkdown>{simple}</ReactMarkdown>
+      <Header/>
+      <div className="technical-stuff">
+        <button className="back-button" onClick={() => navigate(-1)}>back</button>
+        {posts.map(post => (
+          <article key={post.slug}>
+            <MarkdownPost src={post.src} />
           </article>
-
-          <article>
-            <ReactMarkdown>{tcpIp}</ReactMarkdown>
-          </article>
-        </div>
+        ))}
+      </div>
     </>
   );
 }

@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 
-function MarkdownPost(path) {
+function MarkdownPost({src}) {
     const [content, setContent] = useState("");
 
     useEffect(() => {
-        fetch(path).then(res => res.text()).then(setContent);
-    }, [path]);
+        fetch(src).then(res => res.text()).then(setContent);
+    }, [src]);
 
     return <ReactMarkdown>{content}</ReactMarkdown>;
 }
