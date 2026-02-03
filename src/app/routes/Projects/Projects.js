@@ -16,7 +16,7 @@ function Projects() {
     <>
       <Header/>
       <div className="Projects">
-          <span className='link' onClick={onClickUrl('https://discoball.fm/')}>discoball.fm</span><i> - "never listen to an old song."</i>
+          <span className='link' onClick={onClickUrl('https://discoball.fm/')}>discoball.fm</span> - "never listen to an old song."
       </div>
     </>
 

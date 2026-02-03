@@ -1,8 +1,24 @@
 import './Home.css';
+import { useState } from 'react';
 import Header from '../../Components/Header';
-import sunset from '../../Images/sunset.jpg';
+import sunset from '../../Images/marina-sunset.jpg';
+import sunrise from '../../Images/belize-sunrise.jpeg';
+import beach from '../../Images/ocean-beach.jpeg';
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+
 
 function Home() {
+  const [ index, setIndex ] = useState(0);
+  const images = [ [sunset, "Richmond Marina"], [sunrise, "San Pedro"], [beach, "Ocean Beach"] ];
+
+  function nextImage() {
+    setIndex(prev => (prev + 1) % images.length);
+  }
+
+    function prevImage() {
+    setIndex(prev => prev === 0 ? images.length - 1 : (prev - 1) % images.length);
+  }
+
   return (
     <>
       <Header/>
@@ -12,13 +28,18 @@ function Home() {
               Hello, welcome to my website!
             </h3>
             <p>
-              This is where I document my CS learning journey and other interests/activities.
-            </p>
-            <p>
-              Thanks for visiting - here is a pic of a sunset by the water :)
+              Thanks for visiting - here are some images to peruse :)
             </p>
           </article>
-          <img src={sunset} alt="a chill sunset" width="500"></img>
+          <div className="image-reel">
+            <SlArrowLeft onClick={prevImage}/>
+            <div className="image-slide">
+              <img src={images[index][0]} alt={images[index][1]} width="500"></img>
+              <p className="image-caption">{images[index][1]}</p>
+            </div>
+            <SlArrowRight onClick={nextImage}/>
+          </div>
+
         </div>
     </>
 

@@ -10,3 +10,20 @@ img {
     display: block;
     margin: auto;
 }
+
+.image-reel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.image-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-caption {
+    font-family: 'Times New Roman', Times, serif;
+}
