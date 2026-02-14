@@ -1,15 +1,21 @@
 import './Home.css';
+import { NavLink } from 'react-router';
 import { useState } from 'react';
 import Header from '../../Components/Header';
 import sunset from '../../Images/marina-sunset.jpg';
 import sunrise from '../../Images/belize-sunrise.jpeg';
 import beach from '../../Images/ocean-beach.jpeg';
+import lakelouise from '../../Images/lake-louise.jpeg'
+import banff from '../../Images/banff.jpeg';
+import richmond from '../../Images/richmond.jpeg';
+import discoball from '../../Images/discoball.png';
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+
 
 
 function Home() {
   const [ index, setIndex ] = useState(0);
-  const images = [ [sunset, "Richmond Marina"], [sunrise, "San Pedro"], [beach, "Ocean Beach"] ];
+  const images = [ [sunset, "Richmond Marina"], [sunrise, "San Pedro"], [beach, "Ocean Beach"], [lakelouise, "Lake Louise"], [banff, "Banff"], [richmond, "Eastshore State Park"]];
 
   function nextImage() {
     setIndex(prev => (prev + 1) % images.length);
@@ -23,23 +29,26 @@ function Home() {
     <>
       <Header/>
         <div className="Home">
-          <article>
-            <h3>
-              Hello, welcome to my website!
-            </h3>
-            <p>
-              Thanks for visiting - here are some images to peruse :)
-            </p>
-          </article>
-          <div className="image-reel">
-            <SlArrowLeft onClick={prevImage}/>
-            <div className="image-slide">
-              <img src={images[index][0]} alt={images[index][1]} width="500"></img>
-              <p className="image-caption">{images[index][1]}</p>
+          <section>
+            <div className="image-reel">
+              <SlArrowLeft className="arrows" onClick={prevImage}/>
+              <div className="image-slide">
+                <img src={images[index][0]} alt={images[index][1]} width="400"></img>
+                <p className="image-caption">{images[index][1]}</p>
+              </div>
+              <SlArrowRight className="arrows" onClick={nextImage}/>
             </div>
-            <SlArrowRight onClick={nextImage}/>
-          </div>
+          </section>
 
+          <section>
+          <NavLink className="nav-link" to="/coding">
+            coding
+          </NavLink>
+          <br/>
+          <br/>
+            <a target='_blank' rel='noopener noreferrer' href='https://discoball.fm/'>discoball.fm</a> - <i>"never listen to an old song."</i> 
+            <img src={discoball} alt="screenshot of discoball.fm homepage" width="700"></img>
+          </section>
         </div>
     </>
 

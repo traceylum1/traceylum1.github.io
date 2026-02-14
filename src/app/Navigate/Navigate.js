@@ -11,13 +11,13 @@ function Navigate() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/projects">
-            projects
+          <NavLink to="/coding">
+            coding
           </NavLink>
         </li>
         <li>
-          <NavLink to="/learning">
-            learning
+          <NavLink to="/blog">
+            blog
           </NavLink>
         </li>
         <li>

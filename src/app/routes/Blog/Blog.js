@@ -1,12 +1,12 @@
 import { Link } from "react-router";
-import './Learning.css';
+import './Blog.css';
 import Header from '../../Components/Header';
 
-function Learning() {
+function Blog() {
   return (
     <>
       <Header/>
-      <div className="Learning">
+      <div className="blog">
         <p><Link to="technical">Technical Stuff</Link> - Exploring CS topics</p>
         <p><Link to="self-reflections">Self-Reflections</Link> - Some thoughts on my learning journey</p>
       </div>
@@ -14,4 +14,4 @@ function Learning() {
   );
 }
 
-export default Learning;
+export default Blog;
