@@ -33,7 +33,7 @@ function Home() {
             <div className="image-reel">
               <SlArrowLeft className="arrows" onClick={prevImage}/>
               <div className="image-slide">
-                <img src={images[index][0]} alt={images[index][1]} width="500"></img>
+                <img src={images[index][0]} alt={images[index][1]} width="80%"></img>
                 <p className="image-caption">{images[index][1]}</p>
               </div>
               <SlArrowRight className="arrows" onClick={nextImage}/>

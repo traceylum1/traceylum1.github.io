@@ -25,6 +25,7 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .image-caption {
@@ -33,6 +34,7 @@ img {
 
 .arrows {
     cursor: pointer;
+    width: 20px;
 }
 
 
