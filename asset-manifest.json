@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.a502201c.css",
-    "main.js": "/static/js/main.916d76d8.js",
+    "main.css": "/static/css/main.25b02ec7.css",
+    "main.js": "/static/js/main.6f9a626f.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
+    "static/media/marina-sunset.jpg": "/static/media/marina-sunset.5ed16f49654fd2c65c07.jpg",
+    "static/media/profile.jpeg": "/static/media/profile.5027c232924d8e1174fc.jpeg",
+    "static/media/banff.jpeg": "/static/media/banff.a292867a06f97c88a224.jpeg",
+    "static/media/discoball.png": "/static/media/discoball.bcd071dc4c61d0d8e30a.png",
+    "static/media/belize-sunrise.jpeg": "/static/media/belize-sunrise.6f27d8e5d70f52733069.jpeg",
+    "static/media/ocean-beach.jpeg": "/static/media/ocean-beach.c3a2852bbd9e4e0e677a.jpeg",
+    "static/media/lake-louise.jpeg": "/static/media/lake-louise.c50f6af9065002d4d012.jpeg",
+    "static/media/richmond.jpeg": "/static/media/richmond.e9dc5724e76afc1ae6b7.jpeg",
     "index.html": "/index.html",
-    "main.a502201c.css.map": "/static/css/main.a502201c.css.map",
-    "main.916d76d8.js.map": "/static/js/main.916d76d8.js.map",
+    "main.25b02ec7.css.map": "/static/css/main.25b02ec7.css.map",
+    "main.6f9a626f.js.map": "/static/js/main.6f9a626f.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a502201c.css",
-    "static/js/main.916d76d8.js"
+    "static/css/main.25b02ec7.css",
+    "static/js/main.6f9a626f.js"
   ]
 }
