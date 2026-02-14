@@ -1,4 +1,4 @@
-## TCP/IP
+## TCP vs IP
 
 The layers involved in transmission of data over a network include (from low level to higher) the IP layer, TCP/UDP layer, and application protocol layer.
 

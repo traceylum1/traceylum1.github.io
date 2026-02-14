@@ -8,6 +8,7 @@ h1 {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    user-select: none;
 }
 
 .nav-ul li a {
