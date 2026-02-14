@@ -28,12 +28,12 @@ function Home() {
   return (
     <>
       <Header/>
-        <div className="Home">
+        <div className="home">
           <section>
             <div className="image-reel">
               <SlArrowLeft className="arrows" onClick={prevImage}/>
               <div className="image-slide">
-                <img src={images[index][0]} alt={images[index][1]} width="400"></img>
+                <img src={images[index][0]} alt={images[index][1]} width="500"></img>
                 <p className="image-caption">{images[index][1]}</p>
               </div>
               <SlArrowRight className="arrows" onClick={nextImage}/>
@@ -41,13 +41,13 @@ function Home() {
           </section>
 
           <section>
-          <NavLink className="nav-link" to="/coding">
-            coding
-          </NavLink>
-          <br/>
-          <br/>
+            <NavLink className="nav-link" to="/coding">
+              coding
+            </NavLink>
+            <br/>
+            <br/>
             <a target='_blank' rel='noopener noreferrer' href='https://discoball.fm/'>discoball.fm</a> - <i>"never listen to an old song."</i> 
-            <img src={discoball} alt="screenshot of discoball.fm homepage" width="700"></img>
+            <img src={discoball} alt="screenshot of discoball.fm homepage" width="100%"></img>
           </section>
         </div>
     </>
