@@ -1,4 +1,24 @@
 .blog {
   padding: 15px;
   }
-  
+
+.blog-section {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  text-decoration: none;
+  border: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.blog-section:hover {
+  border-color: rgb(148, 148, 148);
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: auto;
+}

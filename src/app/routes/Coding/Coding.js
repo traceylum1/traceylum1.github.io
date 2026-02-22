@@ -17,7 +17,7 @@ function Coding() {
         </section>
         
         <section>
-          <a target='_blank' rel='noopener noreferrer' href='https://github.com/traceylum1/snake-game'>Snake Game</a>
+          <a target='_blank' rel='noopener noreferrer' href='https://github.com/traceylum1/snake-game'>Snake Game in Jack</a>
           <img src={snake} alt="screenshot of snake game" width="100%"></img>
           <p>
             A snake game written in the Jack programming language for nand2tetris. The snake's body is composed of an array of x and y coordinates (even indexes are x coordinates, odd indexes are y coordinates) which point to the top left of each square segment of the body. A new array is created to update the old array values every time the snake moves, and every movement traverses the distance of one body segment. The snake's direction is stored as an integer value between 1-4 (1-up, 2-down, 3-left, 4-right), and the new head position is determined by the current direction. The rest of the array values are shifted down two indexes.
