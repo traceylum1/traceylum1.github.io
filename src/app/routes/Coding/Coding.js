@@ -2,6 +2,7 @@ import './Coding.css';
 import Header from '../../Components/Header';
 import discoball from '../../Images/discoball.png';
 import snake from '../../Images/snake.png';
+import distcache from '../../Images/distributed-cache.png';
 
 function Coding() {
   return (
@@ -32,11 +33,12 @@ function Coding() {
 
         <section>
           <a target='_blank' rel='noopener noreferrer' href='https://github.com/traceylum1/distributed-cache'>Distributed Cache (Python)</a>
+          <img src={distcache} alt="diagram of PUT request to cache node" width="100%"></img>
           <p>
             Wanting to learn more about one of the most common problems in CS, I decided to code my own distributed cache in order to understand more about the CAP theorem.
           </p>
           <p>
-            The theorem states that at a distributed store can guarantee at most 2 of the 3 attributes - consistency, availability, and partition tolerance. Consistency is attained when data is kept up-to-date in every store. Availability 
+            The theorem states that at a distributed store can guarantee at most 2 of the 3 attributes - consistency, availability, and partition tolerance. High consistency is attained when data is kept up-to-date in every store, high availability means the client will (almost) always get a response, and partition tolerance means that nodes will still function even with network issues and inter-node communication breaks down.
           </p>
         </section>
       </div>

@@ -27,10 +27,17 @@
   line-height: 8px;
 }
 
-table {
+.book-table {
   width: 100%;
 }
 
-th {
+.book-table th {
   text-align: left;
+}
+
+.book-table td {
+  max-width: 150px; /* Desired max width */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevents text from wrapping to new lines */
 }
