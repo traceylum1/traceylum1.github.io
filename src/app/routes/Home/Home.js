@@ -1,5 +1,5 @@
 import './Home.css';
-import { NavLink } from 'react-router';
+import { NavLink, Link } from 'react-router';
 import { useState } from 'react';
 import Header from '../../Components/Header';
 import sunset from '../../Images/marina-sunset.jpg';
@@ -11,8 +11,6 @@ import richmond from '../../Images/richmond.jpeg';
 import discoball from '../../Images/discoball.png';
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
-
-
 function Home() {
   const [ index, setIndex ] = useState(0);
   const images = [ [sunset, "Richmond Marina"], [sunrise, "San Pedro"], [beach, "Ocean Beach"], [lakelouise, "Lake Louise"], [banff, "Banff"], [richmond, "Eastshore State Park"]];
@@ -21,7 +19,7 @@ function Home() {
     setIndex(prev => (prev + 1) % images.length);
   }
 
-    function prevImage() {
+  function prevImage() {
     setIndex(prev => prev === 0 ? images.length - 1 : (prev - 1) % images.length);
   }
 
@@ -48,6 +46,20 @@ function Home() {
             <br/>
             <a target='_blank' rel='noopener noreferrer' href='https://discoball.fm/'>discoball.fm</a> - <i>"never listen to an old song."</i> 
             <img src={discoball} alt="screenshot of discoball.fm homepage" width="100%"></img>
+          </section>
+
+          <section>
+            <NavLink className="nav-link" to="/blog">
+              blog
+            </NavLink>
+            <br/>
+            <br/>
+            <div className="blog-topic-home">
+              <Link to="blog/technical">Technical Stuff</Link>&nbsp; - Exploring CS topics
+            </div>
+            <div className="blog-topic-home">
+              <Link to="blog/reflections">Thoughts</Link>&nbsp; - Sharing what's on my mind
+            </div>
           </section>
         </div>
     </>

@@ -8,8 +8,9 @@ function Blog() {
     <>
       <Header/>
       <div className="blog">
-        <Link className="blog-section" to="technical"><b>Technical Stuff </b>Exploring CS topics<SlArrowRight className="arrow"/></Link>
-        <Link className="blog-section" to="self-reflections"><b>Thoughts </b>Some personal reflections on various topics<SlArrowRight className="arrow"/></Link>
+        <Link className="blog-section" to="technical"><b>Technical Stuff</b>&nbsp; - Exploring CS topics<SlArrowRight className="arrow"/></Link>
+        <Link className="blog-section" to="reflections"><b>Thoughts</b>&nbsp; - Sharing what's on my mind<SlArrowRight className="arrow"/></Link>
+        <Link className="blog-section" to="reading"><b>Reading</b>&nbsp; - Books I've read<SlArrowRight className="arrow"/></Link>
       </div>
     </>
   );

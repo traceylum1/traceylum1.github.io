@@ -22,3 +22,15 @@
 .arrow {
   margin-left: auto;
 }
+
+.reading p {
+  line-height: 8px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}

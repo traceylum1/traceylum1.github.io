@@ -7,8 +7,9 @@ import Coding from './app/routes/Coding/Coding';
 import Blog from './app/routes/Blog/Blog';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import reportWebVitals from './reportWebVitals';
-import SelfReflections from './app/routes/Blog/Topics/SelfReflections';
+import Reflections from './app/routes/Blog/Topics/Reflections';
 import TechnicalStuff from './app/routes/Blog/Topics/TechnicalStuff';
+import Reading from './app/routes/Blog/Topics/Reading';
 
 const root = document.getElementById("root");
 
@@ -21,8 +22,9 @@ ReactDOM.createRoot(root).render(
         <Route path="coding" element={<Coding />} />
         <Route path="blog">
           <Route index element={<Blog />} />
-          <Route path="self-reflections" element={<SelfReflections />} />
+          <Route path="reflections" element={<Reflections />} />
           <Route path="technical" element={<TechnicalStuff />} />
+          <Route path="reading" element={<Reading />} />
         </Route>
       </Routes>
     </BrowserRouter>
