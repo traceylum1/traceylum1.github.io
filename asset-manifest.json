@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.94e6486b.css",
-    "main.js": "/static/js/main.1996544d.js",
+    "main.css": "/static/css/main.ee7c0aeb.css",
+    "main.js": "/static/js/main.b0d9d853.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
     "static/media/marina-sunset.jpg": "/static/media/marina-sunset.5ed16f49654fd2c65c07.jpg",
     "static/media/profile.jpeg": "/static/media/profile.5027c232924d8e1174fc.jpeg",
@@ -11,14 +11,15 @@
     "static/media/ocean-beach.jpeg": "/static/media/ocean-beach.c3a2852bbd9e4e0e677a.jpeg",
     "static/media/lake-louise.jpeg": "/static/media/lake-louise.c50f6af9065002d4d012.jpeg",
     "static/media/richmond.jpeg": "/static/media/richmond.e9dc5724e76afc1ae6b7.jpeg",
+    "static/media/distributed-cache.png": "/static/media/distributed-cache.0dcbdf1580348b02b13f.png",
     "static/media/snake.png": "/static/media/snake.53208bb8875d6cd98766.png",
     "index.html": "/index.html",
-    "main.94e6486b.css.map": "/static/css/main.94e6486b.css.map",
-    "main.1996544d.js.map": "/static/js/main.1996544d.js.map",
+    "main.ee7c0aeb.css.map": "/static/css/main.ee7c0aeb.css.map",
+    "main.b0d9d853.js.map": "/static/js/main.b0d9d853.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94e6486b.css",
-    "static/js/main.1996544d.js"
+    "static/css/main.ee7c0aeb.css",
+    "static/js/main.b0d9d853.js"
   ]
 }
