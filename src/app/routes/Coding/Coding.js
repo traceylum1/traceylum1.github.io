@@ -38,8 +38,14 @@ function Coding() {
             Wanting to learn more about one of the most common problems in CS, I decided to code my own distributed cache in order to understand more about the CAP theorem.
           </p>
           <p>
-            The theorem states that at a distributed store can guarantee at most 2 of the 3 attributes - consistency, availability, and partition tolerance. High consistency is attained when data is kept up-to-date in every store, high availability means the client will (almost) always get a response, and partition tolerance means that nodes will still function even with network issues and inter-node communication breaks down.
+            The theorem states that at a distributed store can guarantee at most 2 of the 3 attributes - consistency, availability, and partition tolerance. High consistency is attained when data is kept up-to-date in every store, high availability means the client should (almost) always get a response, and partition tolerance means that nodes will still function even with network issues and inter-node communication breaks down.
           </p>
+          <p>
+            The distributed cache system I designed is simple without requiring a coordinator, so the client should maintain a list of all nodes, and every node also knows of all other members in the cluster. Every node computes the hash ring for consistent hashing and sharding. The client will send requests to the nodes in a round-robin fashion, and it is the node's responsibility to hash the key and forward requests to the node which has the key in its store. Replica nodes are the nodes immediately clockwise from the primary node in the hash ring.
+          </p>
+          <p>
+            I achieve high consistency when a client writes to a node by forwarding writes to all replicas in parallel and waiting for them to complete. Asynchronously forwarding writes in the background would result in total lower latency when returning a response to a client, but it would make the cache 'eventually consistent.' I made this decision in order to reduce overall complexity while prioritizing high consistency in exchange for the added latency. Lastly, to ensure data freshness, I included a TTL module to the store.
+          </p>          
         </section>
       </div>
     </>
