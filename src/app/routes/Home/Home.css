@@ -17,7 +17,7 @@ img {
     justify-content: space-between;
     width: 100%;
     user-select: none;
-    padding-top: 50px;
+    padding-top: 8px;
 }
 
 .image-slide {
@@ -29,11 +29,14 @@ img {
 
 .image-caption {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
 .arrows {
     cursor: pointer;
-    width: 20px;
+    width: 16px;
+    color: rgb(115, 115, 115);
 }
 
 
@@ -50,6 +53,56 @@ img {
     padding-bottom: 25px;
 }
 
+.project-home {
+    padding-bottom: 8px;
+    display: block;
+}
+
 .blog-topic-home {
     padding-bottom: 8px;
+    display: block;
+}
+
+.homepage-section-link {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.homepage-section-link a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.homepage-section-arrow {
+    color: rgb(115, 115, 115);
+}
+
+.homepage-section-link:hover .homepage-section-arrow {
+    color: antiquewhite;
+}
+
+.homepage-section-link:hover a {
+    text-decoration: underline;
+}
+
+.personal-section {
+    margin-top: 8px;
+    padding: 14px 0 6px;
+    border-top: 1px solid rgba(250, 235, 215, 0.3);
+}
+
+.personal-section-title {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(115, 115, 115);
+    text-transform: lowercase;
+}
+
+.reel-image {
+    width: 62%;
+    max-width: 520px;
+    border-radius: 6px;
 }

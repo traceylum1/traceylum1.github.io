@@ -1,5 +1,5 @@
 import './Home.css';
-import { NavLink, Link } from 'react-router';
+import { Link } from 'react-router';
 import { useState } from 'react';
 import Header from '../../Components/Header';
 import sunset from '../../Images/marina-sunset.jpg';
@@ -10,6 +10,7 @@ import banff from '../../Images/banff.jpeg';
 import richmond from '../../Images/richmond.jpeg';
 import discoball from '../../Images/discoball.png';
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import { BsArrowRight } from "react-icons/bs";
 
 function Home() {
   const [ index, setIndex ] = useState(0);
@@ -28,37 +29,48 @@ function Home() {
       <Header/>
         <div className="home">
           <section>
-            <div className="image-reel">
-              <SlArrowLeft className="arrows" onClick={prevImage}/>
-              <div className="image-slide">
-                <img src={images[index][0]} alt={images[index][1]} width="80%"></img>
-                <p className="image-caption">{images[index][1]}</p>
-              </div>
-              <SlArrowRight className="arrows" onClick={nextImage}/>
+            <div className="homepage-section-link">
+              <Link to="coding">coding</Link>&nbsp; <BsArrowRight className="homepage-section-arrow"/>
+            </div>
+
+            <br/>
+            <div className="project-home">
+              <a target='_blank' rel='noopener noreferrer' href='https://discoball.fm/'>discoball.fm</a> - <i>"never listen to an old song."</i> 
+            <img src={discoball} alt="screenshot of discoball.fm homepage" width="100%"></img>
+            </div>
+            
+            <div className="project-home">
+              <a target='_blank' rel='noopener noreferrer' href='https://github.com/traceylum1/distributed-cache'>Distributed Cache</a> - <span>a multiple node distributed cache system written in Python</span> 
+            </div>
+            
+            <div className="project-home">
+              <a target='_blank' rel='noopener noreferrer' href='https://github.com/traceylum1/snake-game'>Snake Game in Jack</a> - a snake game written in the Jack programming language for nand2tetris
             </div>
           </section>
 
           <section>
-            <NavLink className="nav-link" to="/coding">
-              coding
-            </NavLink>
-            <br/>
-            <br/>
-            <a target='_blank' rel='noopener noreferrer' href='https://discoball.fm/'>discoball.fm</a> - <i>"never listen to an old song."</i> 
-            <img src={discoball} alt="screenshot of discoball.fm homepage" width="100%"></img>
-          </section>
+            <div className="homepage-section-link">
+              <Link to="blog">blog</Link>&nbsp; <BsArrowRight className="homepage-section-arrow"/>
+            </div>
 
-          <section>
-            <NavLink className="nav-link" to="/blog">
-              blog
-            </NavLink>
-            <br/>
             <br/>
             <div className="blog-topic-home">
               <Link to="blog/technical">Technical Stuff</Link>&nbsp; - Exploring CS topics
             </div>
             <div className="blog-topic-home">
               <Link to="blog/reflections">Thoughts</Link>&nbsp; - Sharing what's on my mind
+            </div>
+          </section>
+
+          <section className="personal-section">
+            <h3 className="personal-section-title">getting out of the house</h3>
+            <div className="image-reel">
+              <SlArrowLeft className="arrows" onClick={prevImage}/>
+              <div className="image-slide">
+                <img src={images[index][0]} alt={images[index][1]} className="reel-image"></img>
+                <p className="image-caption">{images[index][1]}</p>
+              </div>
+              <SlArrowRight className="arrows" onClick={nextImage}/>
             </div>
           </section>
         </div>
