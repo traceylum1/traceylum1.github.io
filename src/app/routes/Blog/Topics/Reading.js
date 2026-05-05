@@ -6,7 +6,9 @@ function Reading() {
   const navigate = useNavigate();
 
   const books = [
+    { title: "Circe", author: "Madeline Miller", dateFinished: "in progress", rating: 0},
     { title: "Kitchen Table Wisdom", author: "Rachel Naomi Remen M.D.", dateFinished: "in progress", rating: 0},
+    { title: "Yellowface", author: "R.F. Kuang", dateFinished: "2026-04-11", rating: 4},
     { title: "The Moth", author: "Various Authors", dateFinished: "2026-02-09", rating: 5},
     { title: "Elantris", author: "Brandon Sanderson", dateFinished: "2026-01-11", rating: 4},
     { title: "Babel", author: "R.F. Kuang", dateFinished: "2025-10-24", rating: 5},
