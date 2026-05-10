@@ -1,0 +1,3 @@
+## CAP Theorem
+
+The CAP theorem is an essential topic in distributed systems, particularly when it comes to data storage and retrieval. CAP stands for Consistency, Availability, and Partition tolerance, where consistency means that a node will either return the most up-to-date value or an error, availability means that a healthy node will always return a value even if it may be stale, and partition tolerance is the system's ability to continue its regular functionality despite potential network or node failures. The theorem states that any distributed data store can achieve consistency and availability in healthy network conditions, but must choose between consistency or availability in the case of a network partition.

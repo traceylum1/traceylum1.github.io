@@ -1,5 +1,11 @@
 [
     {
+        "slug": "cap-theorem",
+        "title": "CAP Theorem",
+        "date": "2026-05-10",
+        "src": "/Technical/cap-theorem.md"
+    },
+    {
         "slug": "tcp-ip",
         "title": "TCP/IP",
         "date": "2024-01-01",
