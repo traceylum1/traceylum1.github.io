@@ -9,3 +9,5 @@ For a distributed cache cluster to be highly consistent, a node that stores a pa
 An AP (availablity + partition tolerance) system prioritizes availability over consistency, and tolerates stale data. This is common in social media platforms where data is constantly being updated rapidly, and having clients see slightly different values doesn't generally impact their experience negatively, whereas receiving errors whenever data is stale would be quite noticeable.
 
 A CA (consistency + availability) system ensures that data is both consistent and available, and is a feature of traditional relational databases, but not possible for distributed databases due to inevitable network partitions.
+
+A more recent take on the CAP theorem is the PACELC, which means that in case of a network Partition, you must choose between Availability and Consistency, Else, you must choose between Latency and loss of Consistency. The first part is the same principle as the original theorem, and the second part is added to describe the tradeoffs even during healthy network conditions, since maintaining high consistency often requires a lot of inter-node communication.
